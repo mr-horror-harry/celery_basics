@@ -10,7 +10,7 @@ redis==5.0.3
 # start redis server
 redis-server
 
-# rabbitmq
+# start rabbitmq server
 rabbitmq-server
 
 # create rabbitmq user and password
