@@ -14,9 +14,9 @@ redis-server
 rabbitmq-server
 
 # create rabbitmq user and password
-rabbitmqctl add_user <username> <password>
+rabbitmqctl add_user _username_ _password_
 
-rabbitmqctl set_permissions -p / <username> ".*" ".*" ".*"
+rabbitmqctl set_permissions -p / _username_ ".*" ".*" ".*"
 
 rabbitmqctl list_users
 
@@ -42,4 +42,4 @@ redis-cli -n 1
 
 KEYS *
 
-GET <key_n>
+GET _key_n_
