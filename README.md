@@ -3,12 +3,16 @@ python3 -m venv venv
 
 # service requirements
 rabbitmq
+
 redis
 
 # pip requirements
 amqp==5.2.0
+
 kombu==5.3.5
+
 python-dotenv==1.0.1
+
 redis==5.0.3
 
 # start redis server
@@ -26,6 +30,9 @@ rabbitmqctl list_users
 
 # start rabbitmq celery-worker
 celery -A tasks worker --loglevel=INFO
+
+# start rabbitmq celery-beat
+celery -A tasks worker --loglevel=INFO --beat
 
 # start redis celery-worker
 celery -A tasks1 worker --loglevel=INFO
