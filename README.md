@@ -1,6 +1,10 @@
 # init 
 python3 -m venv venv
 
+# service requirements
+rabbitmq
+redis
+
 # pip requirements
 amqp==5.2.0
 kombu==5.3.5
